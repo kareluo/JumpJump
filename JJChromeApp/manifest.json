@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "JumpJump",
+  "version": "1.0.0",
+  "app": {
+    "background": {
+      "scripts": [
+        "background.js"
+      ]
+    }
+  },
+  "permissions": [
+    {
+      "socket": [
+        "tcp-connect:*:*"
+      ]
+    },
+    "http://127.0.0.1/",
+    "https://timgsa.baidu.com/",
+    "http://k.yimg.jp/"
+  ],
+  "sockets": {
+    "tcp": {
+      "connect": "*"
+    }
+  }
+}

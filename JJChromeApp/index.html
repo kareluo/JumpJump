@@ -1,0 +1,77 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8; img-src *;" />
+  <title>JumpJump</title>
+  <script src="./js/chromeadb.js"></script>
+  <script src="./js/jquery-3.2.1.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/decoder/Decoder.js"></script>
+  <script src="./js/decoder/YUVCanvas.js"></script>
+  <script src="./js/decoder/Player.js"></script>
+  <script src="./js/drawer.js"></script>
+  <style>
+    body {
+      position: absolute;
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .screen-win {
+      position: relative;
+      margin: 0 auto;
+      width: 100vw;
+      height: 95vh;
+    }
+
+    .touch-pad {
+      position: absolute;
+      /*cursor: url("./assets/icons/cursor_jj.ico"), default;*/
+    }
+
+    .screen {
+
+    }
+
+    .screen-win > .screen {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .tips {
+      width: 100vw;
+      height: 20vh;
+      bottom: 0;
+      background: #FFF;
+    }
+
+    .player {
+      width: 100%;
+      height: 100%;
+    }
+
+    .title {
+      font-size: 18px;
+      width: 300px;
+      color: #333;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="screen-win">
+    <div class="screen"></div>
+    <canvas class="touch-pad" id="board" width="1000px" height="1000px">
+      Your browser does not support the canvas element.
+    </canvas>
+  </div>
+  <div class="tips">
+    时距比：<input type="number" name="base_ratio" value="4.9">距离：<input type="number" name="distance">
+  </div>
+
+</body>
+
+</html>
